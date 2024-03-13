@@ -7,6 +7,9 @@ import tensorflow_hub as hub
 from utils.config_loader import load_global_config
 from models.bert_model import build_classifier_model, train_classifier_model
 
+print(tf.__version__)
+tf.config.list_physical_devices('GPU')
+print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 global_config = load_global_config()
 
 

@@ -21,7 +21,7 @@ def create_adamw_optimizer(train_ds):
     return optimizer
 
 def evaluate_model(test_ds, is_plot):
-    saved_model_path = '/mnt/workspace/models/1'
+    saved_model_path = '/mnt/workspace/bilibili-bullet-screen-analysis/model/models/1'
     classifier_model = tf.saved_model.load(saved_model_path)
     loss, accuracy = classifier_model.evaluate(test_ds)
 

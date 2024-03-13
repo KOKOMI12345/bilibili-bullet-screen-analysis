@@ -1,4 +1,4 @@
 global_config:
-  epochs: 1
+  epochs: 5
   learning_rate: 3e-5
-  batch_size: 128
+  batch_size: 32

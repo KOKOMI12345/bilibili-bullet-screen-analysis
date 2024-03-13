@@ -33,7 +33,7 @@ def train_classifier_model(model, train_ds, val_ds):
     history = model.fit(x=train_ds,
                                validation_data=val_ds,
                                epochs=epochs)
-    tf.saved_model.save(model, "/mnt/workspace/models/1")
+    tf.saved_model.save(model, "/mnt/workspace/bilibili-bullet-screen-analysis/model/models/1")
     print("导出模型成功")
     
 
